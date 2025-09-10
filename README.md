@@ -4,30 +4,32 @@ A sleek, real-time mortgage rate dashboard that tracks interest rate trends usin
 
 ![Dashboard Preview](https://via.placeholder.com/800x400/3b82f6/ffffff?text=Mortgage+Trend+Tracker)
 
-## 🚀 Features
+## 🏠 Features
 
-- **Real-time Treasury Data**: Fetch 10-Year Treasury yields from FRED API
-- **Mortgage Rate Estimation**: Calculate estimated 30-year mortgage rates using Treasury yield + adjustable spread
-- **Interactive Visualization**: Chart.js powered trend charts with multiple time ranges
-- **Plain English Explanations**: No financial jargon - explanations anyone can understand
-- **Mobile-First Design**: Responsive UI with Tailwind CSS
-- **Educational Content**: Built-in glossary and explainers about bonds, yields, and mortgage rates
-- **Data Export**: Export historical data as CSV files
+- **Real-time Mortgage Rates**: Live 30-year and 15-year fixed mortgage rates from FRED API
+- **Treasury Bond Tracking**: 10-year Treasury yields with spread analysis
+- **Inflation Insights**: CPI and Core PCE inflation rates with plain English explanations
+- **Interactive Charts**: Time-range controls (30d, 90d, 180d, 365d) with Chart.js
+- **Rate Predictions**: Trend analysis and mortgage impact assessments
+- **Responsive Design**: Clean, professional interface optimized for all devices
+- **Educational Content**: Built-in glossary and mortgage rate explanations
+- **Real-time Updates**: Live data refresh with caching for performance
 
-## 🛠️ Tech Stack
+## 🛠 Technology Stack
 
 - **Frontend**: React 18 + TypeScript
-- **Build Tool**: Vite 5
-- **Styling**: Tailwind CSS 3
-- **Charts**: Chart.js + react-chartjs-2
-- **Data Source**: Federal Reserve Economic Data (FRED) API
-- **Code Quality**: ESLint + Prettier
+- **Build Tool**: Vite 5 with HMR (Hot Module Replacement)
+- **Styling**: Tailwind CSS with custom mortgage-focused themes
+- **Charts**: Chart.js with react-chartjs-2 for interactive visualizations
+- **API**: FRED (Federal Reserve Economic Data) with Vite proxy
+- **Date Handling**: date-fns for precise time calculations
+- **Code Quality**: ESLint + Prettier with TypeScript strict mode
 
 ## 📋 Prerequisites
 
-1. **FRED API Key** (free): Get yours at https://fred.stlouisfed.org/docs/api/api_key.html
-2. **Node.js** (v18 or higher)
-3. **npm** or **yarn**
+- **FRED API Key** (free): Get yours at https://fred.stlouisfed.org/docs/api/api_key.html
+- **Node.js** (v18 or higher)
+- **npm** (comes with Node.js)
 
 ## 🚀 Quick Start
 
@@ -194,6 +196,31 @@ After getting the basic setup running, here are suggested next steps:
    - Dark mode toggle
    - Custom time range picker
    - Mobile app wrapper
+
+## 🚀 Future Improvements & Ideas
+
+### High Priority
+- [ ] **Mortgage Calculator**: Add payment calculator with PMI, taxes, insurance
+- [ ] **Rate Alerts**: Email/SMS notifications when rates hit target levels
+- [ ] **Historical Analysis**: Compare current rates to historical averages
+- [ ] **Regional Data**: State/city specific mortgage rate variations
+- [ ] **Rate Lock Simulator**: Show cost/benefit of locking rates at different times
+
+### Medium Priority  
+- [ ] **Multiple Loan Types**: FHA, VA, jumbo loan rates
+- [ ] **Credit Score Impact**: Show rate variations by credit score ranges
+- [ ] **Refinance Calculator**: Current vs new payment comparisons
+- [ ] **Market News Integration**: Fed announcements, economic indicators
+- [ ] **Data Export**: CSV/Excel export for historical data
+
+### Nice to Have
+- [ ] **Dark Mode**: Toggle between light/dark themes
+- [ ] **Customizable Dashboard**: Drag-and-drop widget arrangement
+- [ ] **Social Sharing**: Share rate snapshots on social media
+- [ ] **PWA Support**: Install as mobile/desktop app
+- [ ] **Multi-language**: Spanish, other languages
+
+*Have ideas? [Open an issue](../../issues) or contribute!*
 
 ## 🤝 Contributing
 
