@@ -3,6 +3,7 @@ import { Header } from '../components/Layout/Header';
 import { Footer } from '../components/Layout/Footer';
 import { StatCard } from '../components/Cards/StatCard';
 import { TreasuryCard } from '../components/Cards/TreasuryCard';
+import { MortgageCalculator } from '../components/Cards/MortgageCalculator';
 import { SpreadControl } from '../components/Controls/SpreadControl';
 import { TrendChart } from '../components/Charts/TrendChart';
 import { InflationInsights } from '../components/Info/InflationInsights';
@@ -486,6 +487,14 @@ export function Dashboard() {
             timeRange={timeRange}
             onTimeRangeChange={setTimeRange}
             isLoading={isLoading}
+          />
+        </div>
+
+        {/* Mortgage Payment Calculator */}
+        <div className="mb-8">
+          <MortgageCalculator
+            currentRate30Y={dashboardData?.mortgageRates.actual || dashboardData?.mortgageRates.estimated}
+            currentRate15Y={dashboardData?.mortgageRates.actual15Year || dashboardData?.mortgageRates.estimated15Year}
           />
         </div>
 
